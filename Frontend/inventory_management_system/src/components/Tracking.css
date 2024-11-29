@@ -1,0 +1,53 @@
+.tracking-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .tracking-number {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .progress-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-top: 2px solid #ccc;
+  }
+  
+  .progress-step {
+    flex: 1;
+    padding: 10px;
+    position: relative;
+    font-size: 1em;
+    color: #333;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  .progress-step::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .progress-step.active::before {
+    background-color: red;
+  }
+  
+  .progress-step.active {
+    color: red;
+    font-weight: bold;
+  }
+  
